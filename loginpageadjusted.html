@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>TechBee.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   h1{
+       color: seashell;
+       font-family: papyrus;
+   }
+   
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 8%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+ <form action="" method="post">
+    <img src="logo1.jpg" class="logo"><br><br>
+    <h1><span style="background-color:rgb(52, 71, 112);">Buy.Read.Repeat@TechBee</span>
+    </h1>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="myInput" name="psw" required ><br><br>
+    <input type="checkbox" onclick="myFunction()">Show Password <br><br>
+
+    <button type="submit">Login</button><br><br>
+    <label>
+    <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label><br><br>
+   
+    New user?<a href="http://127.0.0.1:5500/assignment1.html" style="color:crimson" style="text-align: center;">Register</a><br>
+ 
+</form>
+<!-- function for showing password -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</body>
+</html>
